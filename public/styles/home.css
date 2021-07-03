@@ -35,7 +35,7 @@ main {
 
 .landing__buttons {
     display: flex;
-    gap: 35px;
+    gap: 30px;
 }
 
 .landing__buttons button {
@@ -55,6 +55,7 @@ main {
 
 .wave {
     width: 100%;
+    margin-bottom: -5px;
 }
 
 .fpoo__area {
@@ -63,16 +64,16 @@ main {
     background-color: #0B184B;
 }
 
-.fpoo__content {
+.fpoo__content, .lima__content {
     padding: 10vh clamp(30px, 15vw, 444px);
     display: flex;
     flex-direction: column;
     gap: 50px;
+    align-items: center;
 }
 
-.fpoo__area h2 {
+.fpoo__area h2, .fpoo__area h3 {
     color: white;
-    font-size: 36px;
 }
 
 .fpoo__area .content {
@@ -81,16 +82,7 @@ main {
     gap: 50px;
 }
 
-.fpoo__area .content .texts {
-    padding: 0 50ppx;
-}
-
-.fpoo__area .content .texts h3 {
-    color: white;
-    font-size: 24px;
-}
-
-.fpoo__area .content .texts p {
+.content .texts p {
     text-align: left;
     margin-top: 10px;
 }
@@ -99,8 +91,38 @@ main {
     width: 300px;
 }
 
+.lima__area {
+    height: 100%;
+    width: 100%;
+}
+
+.lima__area .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.lima__area .texts > * {
+    text-align: left;
+}
+
+.lima__area .images {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.lima__area .images img {
+    width: min(450px, 100%);
+}
+
 @media (max-width: 1024px) {
     .fpoo__area .content {
+        flex-direction: column;
+    }
+
+    .lima__area .images {
         flex-direction: column;
     }
 }

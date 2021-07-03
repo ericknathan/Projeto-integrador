@@ -8,6 +8,11 @@
 
 button {
     border: none;
+    transition: transform .3s;
+}
+
+button:hover {
+    transform: scale(1.07);
 }
 
 h1, h2, h3, h4, h5, h6, span, p, a {
@@ -17,6 +22,14 @@ h1, h2, h3, h4, h5, h6, span, p, a {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     color: #0B184B;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 p, a {
