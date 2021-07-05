@@ -6,12 +6,12 @@
     box-sizing: border-box;
 }
 
-button {
+button, .hare__content .content {
     border: none;
     transition: transform .3s;
 }
 
-button:hover {
+button:hover, .hare__content .content:hover {
     transform: scale(1.07);
 }
 
