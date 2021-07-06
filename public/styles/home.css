@@ -87,11 +87,14 @@ main {
 
 .fpoo__area img {
     width: 300px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .fpoo__area, .lima__area, .sop__area, .hare__area {
     height: 100%;
     width: 100%;
+    padding-top: 10vh;
 }
 
 .lima__area .content {
@@ -114,15 +117,14 @@ main {
 
 .lima__area .images img {
     width: min(450px, 100%);
-}
-
-.sop__area {
-    padding-top: 10vh;
+    height: 300px;
+    object-fit: cover;
 }
 
 .sop__area .sop__content {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 }
 
 .sop__area .sop__content .content {
@@ -132,12 +134,9 @@ main {
     align-items: center;
 }
 
-.sop__area img {
+.sop__area img, .sop__area video, .sop__area iframe {
     width: min(450px, 100%);
-}
-
-.hare__area {
-    padding-top: 10vh;
+    object-fit: cover;
 }
 
 .hare__area .content {
