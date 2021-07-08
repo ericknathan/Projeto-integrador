@@ -127,6 +127,11 @@ main {
     align-items: baseline;
 }
 
+.sop__area > .texts {
+    padding: 0 clamp(30px, 15vw, 444px);
+    padding-top: 5vh;
+}
+
 .sop__area .sop__content .content {
     display: flex;
     flex-direction: column;
